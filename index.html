@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta property="og:description" content="Magento 2 Bootcamp Cheatcheet
+">
+    <meta name="description" content="Magento 2 Bootcamp Cheatcheet
+">
+
+    <title>Magento 2 Bootcamp Cheatcheet</title>
+    <link rel="shortcut icon" href="/assets/images/amp_favicon.png">
+    <link rel="canonical" href="https://cheatsheet.nu/">
+    <link rel="alternate" type="application/rss+xml" title="Magento 2 Bootcamp Cheatcheet" href="https://cheatsheet.nu/feed.xml">
+
+    <script type="application/ld+json">
+
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "https://cheatsheet.nu/",
+  "headline": "Magento 2 Bootcamp Cheatcheet",
+  "datePublished": "2016-10-04T09:51:36+00:00",
+  "dateModified": "2016-10-04T09:51:36+00:00",
+  "description": "Magento 2 Bootcamp Cheatcheet
+",
+  "author": {
+    "@type": "Person",
+    "name": "Ray Bogman"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Magento 2 Bootcamp Cheatcheet",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cheatsheet.nu/assets/images/logo.jpg",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://cheatsheet.nu/assets/images/logo.jpg",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+
+    <style amp-custom>
+
+        table { border-collapse: collapse; border-spacing: 0; width: 100%; border: 1px solid #ddd; }
+        table td, table th { border: none; text-align: left; padding: 8px; }
+        table tr:nth-child(even) { background-color: #f2f2f2; }
+        table .table-overflow { overflow-x: auto; }
+
+        /** Syntax highlighting styles */
+        .highlight { background: #fff; }
+        .highlighter-rouge .highlight { background: #eef; }
+        .highlight .c { color: #998; font-style: italic; }
+        .highlight .err { color: #a61717; background-color: #e3d2d2; }
+        .highlight .k { font-weight: bold; }
+        .highlight .o { font-weight: bold; }
+        .highlight .cm { color: #998; font-style: italic; }
+        .highlight .cp { color: #999; font-weight: bold; }
+        .highlight .c1 { color: #998; font-style: italic; }
+        .highlight .cs { color: #999; font-weight: bold; font-style: italic; }
+        .highlight .gd { color: #000; background-color: #fdd; }
+        .highlight .gd .x { color: #000; background-color: #faa; }
+        .highlight .ge { font-style: italic; }
+        .highlight .gr { color: #a00; }
+        .highlight .gh { color: #999; }
+        .highlight .gi { color: #000; background-color: #dfd; }
+        .highlight .gi .x { color: #000; background-color: #afa; }
+        .highlight .go { color: #888; }
+        .highlight .gp { color: #555; }
+        .highlight .gs { font-weight: bold; }
+        .highlight .gu { color: #aaa; }
+        .highlight .gt { color: #a00; }
+        .highlight .kc { font-weight: bold; }
+        .highlight .kd { font-weight: bold; }
+        .highlight .kp { font-weight: bold; }
+        .highlight .kr { font-weight: bold; }
+        .highlight .kt { color: #458; font-weight: bold; }
+        .highlight .m { color: #099; }
+        .highlight .s { color: #d14; }
+        .highlight .na { color: #008080; }
+        .highlight .nb { color: #0086B3; }
+        .highlight .nc { color: #458; font-weight: bold; }
+        .highlight .no { color: #008080; }
+        .highlight .ni { color: #800080; }
+        .highlight .ne { color: #900; font-weight: bold; }
+        .highlight .nf { color: #900; font-weight: bold; }
+        .highlight .nn { color: #555; }
+        .highlight .nt { color: #000080; }
+        .highlight .nv { color: #008080; }
+        .highlight .ow { font-weight: bold; }
+        .highlight .w { color: #bbb; }
+        .highlight .mf { color: #099; }
+        .highlight .mh { color: #099; }
+        .highlight .mi { color: #099; }
+        .highlight .mo { color: #099; }
+        .highlight .sb { color: #d14; }
+        .highlight .sc { color: #d14; }
+        .highlight .sd { color: #d14; }
+        .highlight .s2 { color: #d14; }
+        .highlight .se { color: #d14; }
+        .highlight .sh { color: #d14; }
+        .highlight .si { color: #d14; }
+        .highlight .sx { color: #d14; }
+        .highlight .sr { color: #009926; }
+        .highlight .s1 { color: #d14; }
+        .highlight .ss { color: #990073; }
+        .highlight .bp { color: #999; }
+        .highlight .vc { color: #008080; }
+        .highlight .vg { color: #008080; }
+        .highlight .vi { color: #008080; }
+        .highlight .il { color: #099; }
+
+        .icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
+        .icon > svg path { fill: #828282; }
+
+        amp-img { background-color: grey; }
+
+        .cf:after { content: ""; display: table; clear: both; }
+
+        main { display: block; }
+
+        body { font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; margin: 0; padding: 0; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-font-feature-settings: "liga=1, dlig=1"; -ms-font-feature-settings: "liga", "dlig"; -webkit-font-feature-settings: "liga", "dlig"; -o-font-feature-settings: "liga", "dlig"; font-feature-settings: "liga", "dlig"; }
+
+        .site-header { position: relative; width: 100%; max-width: 700px; margin: 16px auto 0 auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+        @media only screen and (max-width: 800px) { .site-header { padding: 0 16px; } }
+        .site-header .page-links { display: block; position: absolute; top: 10px; right: 16px; font-weight: 200; font-style: normal; font-size: 18px; line-height: 30px; }
+        .site-header .page-links a { text-decoration: none; color: #999999; }
+        .site-header .page-links a:hover { color: #333333; }
+
+        .blog-header { width: 100%; max-width: 700px; margin: 0 auto; position: relative; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+        .blog-header .blog-title { margin-bottom: 8px; font-size: 50px; font-weight: 700; letter-spacing: -2px; outline: 0; line-height: 50px; word-break: break-word; color: #333333; }
+        .blog-header .blog-description { font-size: 28px; margin: 0 0 20px; padding: 0; line-height: 1.2; color: #666666; font-weight: 300; }
+
+        .content { width: 100%; max-width: 700px; margin: 25px auto 0 auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+        @media only screen and (max-width: 800px) { .content { padding: 0 16px; } }
+        .content article { padding: 20px 0; border-bottom: 1px solid #f2f2f0; }
+        .content article:last-child { border-bottom: 0px; }
+        .content article .post-title { letter-spacing: -0.02em; font-weight: 700; font-style: normal; display: block; font-size: 36px; line-height: 1.15; margin: 0 0; }
+        .content article .post-title a { text-decoration: none; color: #333332; }
+        .content article .post-title a:hover { text-decoration: none; }
+        .content article .post-excerpt { letter-spacing: -0.02em; font-weight: 300; font-style: normal; font-size: 20px; line-height: 1.59; color: #666665; }
+        .content article .post-meta { font-size: 14px; color: #b3b3b1; line-height: 30px; }
+        .content article .post-meta a { color: #b3b3b1; text-decoration: none; }
+        .content article .post-meta a:hover { text-decoration: underline; }
+
+        .post-template .content { max-width: 700px; }
+
+        .index-headline { border-top: 1px solid #dededc; margin: 0; padding: 16px 0; }
+        .index-headline span { color: #b3b3b1; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .pagination { text-align: center; padding: 16px 0 0; font-size: 12px; }
+        .pagination a { color: #999999; text-decoration: none; }
+        .pagination a:hover { color: #333333; }
+
+        .site-footer { margin: 0 auto; padding: 48px 0; width: 100%; max-width: 700px; font-size: 12px; text-align: center; color: #999999; line-height: 17.6px; }
+        .site-footer a { color: #666666; text-decoration: none; }
+        .site-footer a:hover { color: #333333; }
+
+        .post .post-meta { font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+        .post .post-title { font-weight: 700; font-style: normal; letter-spacing: -0.04em; font-size: 50px; line-height: 1.1; color: #333332; margin-bottom: 50px; }
+        .post .author-image { background-image: url(/assets/images/raybogman.png); display: inline-block; width: 30px; height: 30px; line-height: 30px; margin-right: 8px; margin-bottom: -10px; float: left; background-size: cover; border-radius: 100%; text-indent: -9999px; }
+        .post .post-meta-text { color: #b3b3b1; letter-spacing: -0.02em; font-weight: 400; font-style: normal; font-size: 14px; overflow: hidden; font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; white-space: nowrap; text-overflow: ellipsis; }
+        .post .post-content { width: 100%; font-family: Georgia, Cambria, "Times New Roman", Times, "Lora", serif; color: #333333; }
+        .post .post-content h1, .post .post-content h2, .post .post-content h3 { font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+        .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 { letter-spacing: -0.02em; font-weight: 700; font-style: normal; font-size: 24px; line-height: 1.3; margin-top: 50px; margin-bottom: 0px; font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+        .post .post-content h3 { font-size: 36px; }
+        .post .post-content h2, .post .post-content h1 { letter-spacing: -0.02em; font-weight: 700; font-style: normal; font-size: 42px; line-height: 1.2; margin-top: 50px; margin-bottom: 0px; }
+        .post .post-content p { font-weight: 400; font-style: normal; font-size: 22px; line-height: 1.59; letter-spacing: -.002em; margin-top: 30px; margin-bottom: 0; color: #333333; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
+        .post .post-content a { color: #333333; text-decoration: underline; }
+        .post .post-content amp-img, .post .post-content amp-youtube { margin-top: 30px; }
+        .post .post-content figure { margin: 0; padding: 0 0 30px; }
+        .post .post-content figcaption { font-weight: 400; font-style: italic; font-size: 16px; line-height: 1.3; color: #666665; outline: 0; z-index: 300; text-align: center; }
+        .post .post-content hr { border: 0; padding: 0; display: block; width: 15%; margin: 30px auto; border: 0px solid #dddddd; border-top: 1px solid #dddddd; }
+        .post .post-content blockquote { margin: 0 0 30px; margin-left: -26px; border-left: 3px solid #57ad68; padding-left: 20px; }
+        .post .post-content blockquote p { letter-spacing: 0.01rem; font-weight: 400; mborder-left: 3px solid #57ad68; mpadding-left: 20px; mmargin-left: -26px; padding-bottom: 3px; }
+        .post .post-content ul, .post .post-content ol { padding: 0 0 30px; margin: 0; }
+        .post .post-content li { padding: 0; font-weight: 400; font-style: normal; font-size: 23px; line-height: 30px; margin-left: 30px; margin-bottom: 12px; padding-top: 2px; }
+        .post .post-content li p { padding: 0 0 1.618rem; }
+        .post .post-content ol li { list-style-type: decimal; }
+        .post .bottom-teaser { padding: 50px 0 0 0; font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+        .post .bottom-teaser hr { border: 0; padding: 0; display: block; width: 15%; margin: 16px 0 16px 100px; border: 0px solid #dddddd; border-top: 1px solid #dddddd; }
+        .post .bottom-teaser .isLeft { float: left; width: 47%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+        @media only screen and (max-width: 800px) { .post .bottom-teaser .isLeft { width: 100%; padding-bottom: 32px; } }
+        .post .bottom-teaser .isLeft .bio { margin-top: 18px; margin-bottom: 18px; }
+        .post .bottom-teaser .isLeft .username { margin-left: 4px; margin-right: 18px; margin-bottom: 18px; }
+        .post .bottom-teaser .isLeft .index-headline { padding-bottom: 32px; }
+        .post .bottom-teaser .isLeft a { color: black; text-decoration: none; }
+        .post .bottom-teaser .isLeft a:hover { color: #333333; text-decoration: underline; }
+        .post .bottom-teaser .isLeft .author-image { display: block; width: 80px; height: 80px; float: left; background-size: cover; border-radius: 100%; text-indent: -9999px; }
+        .post .bottom-teaser .isLeft h4 { font-size: 18px; line-height: 1.1; font-weight: 700; padding: 0; margin: 0; padding-left: 100px; }
+        .post .bottom-teaser .isLeft p { font-size: 14px; line-height: 1.3; font-weight: 400; padding: 0; margin: 0; padding-left: 100px; }
+        .post .bottom-teaser .isLeft p.published { color: #999999; }
+        .post .bottom-teaser .isRight { float: right; width: 47%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+        @media only screen and (max-width: 800px) { .post .bottom-teaser .isRight { width: 100%; } }
+        .post .bottom-teaser .isRight .index-headline { padding-bottom: 32px; }
+        .post .bottom-teaser .isRight .site-footer { margin: 0; padding: 0; color: #333333; text-align: left; font-size: 14px; line-height: 1.3; color: #999999; }
+        .post .bottom-teaser .isRight .site-footer a { color: #333333; text-decoration: none; }
+        .post .bottom-teaser .isRight .site-footer a:hover { text-decoration: underline; }
+        .post .bottom-teaser .isRight .site-footer .poweredby { display: block; padding-bottom: 18px; font-weight: 700; color: #333333; }
+
+        .share { text-align: right; padding: 20px 0 0; }
+        .share a { text-decoration: none; color: #bbbbbb; padding-left: 12px; }
+        .share a .hidden { display: none; }
+        .share a:hover { color: #333333; }
+
+        pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eeeeff; }
+
+        code { padding: 1px 5px; }
+
+        pre { padding: 8px 12px; overflow-x: scroll; }
+        pre > code { border: 0; padding-right: 0; padding-left: 0; }
+
+        .pagination .disabled { opacity: 0; }
+
+    </style>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+<body>
+<header class="site-header">
+    <a href="/" class="logo"><span class="logo"><amp-img src="/assets/images/logo.jpg" width="48" height="48" /></span></a>
+
+    <div class="page-links">
+        <a class="page-link" href="/">Home</a>
+
+
+        • <a class="page-link" href="/about/">About</a>
+
+
+
+
+
+        • <a class="page-link" href="/#git">GIT</a>
+
+
+
+
+
+        • <a class="page-link" href="/#linux">Linux</a>
+
+
+
+        • <a class="page-link" href="/#magento2">Magento 2</a>
+
+
+
+        • <a class="page-link" href="/#vi">VI</a>
+
+
+    </div>
+</header>
+
+
+<main class="content" role="main">
+
+    <header class="blog-header">
+        <h1 class="blog-title">Magento 2 Bootcamp Cheatcheet</h1>
+        <h2 class="blog-description">Learn, Act, Commit
+        </h2>
+    </header>
+
+    <div class="cf frame">
+        <h2>VI, Linux, Git, Magento Commands</h2>
+        <div class="table-overflow">
+            <h2><a name="vi">VI Commands</a></h2>
+            <table>
+                <tr>
+                    <td>:e filename</td>
+                    <td>Open <em>filename</em> for edition</td>
+                </tr>
+                <tr>
+                    <td>:w</td>
+                    <td>Save file</td>
+                </tr>
+                <tr>
+                    <td>:q</td>
+                    <td>Exit Vim</td>
+                </tr>
+                <tr>
+                    <td>:w!</td>
+                    <td>Write file and quit</td>
+                </tr>
+            </table>
+
+            <h3>Search</h3>
+
+            <table>
+                <tr>
+                    <td>/word</td>
+                    <td>Search <em>word</em> from top to bottom</td>
+                </tr>
+                <tr>
+                    <td>?word</td>
+                    <td>Search <em>word</em> from bottom to top</td>
+                </tr>
+                <tr>
+                    <td>/jo[ha]n</td>
+                    <td>Search <em>john</em> or <em>joan</em></td>
+                </tr>
+                <tr>
+                    <td>/\&lt; the</td>
+                    <td>Search the, theatre or <em>then</em></td>
+                </tr>
+                <tr>
+                    <td>/the\&gt;</td>
+                    <td>Search <em>the</em> or <em>breathe</em></td>
+                </tr>
+                <tr>
+                    <td>/\&lt; the\&gt;</td>
+                    <td>Search <em>the</em></td>
+                </tr>
+                <tr>
+                    <td>/\&lt; </em>¦.\&gt;</td
+                    ><td>Search all words of 4 letters</td>
+                </tr>
+                <tr>
+                    <td>/\/</td>
+                    <td>Search <em>fred</em> but not <em>alfred</em> or <em>frederick</em></td>
+                </tr>
+                <tr>
+                    <td>/fred\|joe</td>
+                    <td>Search <em>fred</em> or <em>joe</em></td>
+                </tr>
+                <tr>
+                    <td>/\&lt;\d\d\d\d\&gt;</td>
+                    <td>Search exactly 4 digits</td>
+                </tr>
+                <tr>
+                    <td>/^\n\{3}</td>
+                    <td>Find 3 empty lines</td>
+                </tr>
+                <tr>
+                    <td>:bufdo /searchstr/</td>
+                    <td>Search in all open files</td>
+                </tr>
+            </table>
+
+            <h3>Replace</h3>
+
+            <table>
+                <tr>
+                    <td>:%s/old/new/g</td>
+                    <td>Replace all occurences of <em>old</em> by <em>new</em> in file</td>
+                </tr>
+                <tr>
+                    <td>:%s/old/new/gw</td>
+                    <td>Replace all occurences with confirmation</td>
+                </tr>
+                <tr>
+                    <td>:2,35s/old/new/g</td>
+                    <td>Replace all occurences between lines 2 and 35</td>
+                </tr>
+                <tr>
+                    <td>:5,$s/old/new/g</td>
+                    <td>Replace all occurences from line 5 to EOF</td>
+                </tr>
+                <tr>
+                    <td>:%s/^/hello/g</td>
+                    <td>Replace the begining of each line by <em>hello</em></td>
+                </tr>
+                <tr>
+                    <td>:%s/$/Harry/g</td>
+                    <td>Replace the end of each line by <em>Harry</em></td>
+                </tr>
+                <tr>
+                    <td>:%s/onward/forward/gi</td>
+                    <td>Replace <em>onward</em> by <em>forward</em>, case unsensitive</td>
+                </tr>
+                <tr>
+                    <td>:%s/ *$//g</td>
+                    <td>Delete all white spaces</td>
+                </tr>
+                <tr>
+                    <td>:g/string/d</td>
+                    <td>Delete all lines containing <em>string</em></td>
+                </tr>
+                <tr>
+                    <td>:v/string/d</td>
+                    <td>Delete all lines containing which didn&#8217;t contain <em>string</em></td>
+                </tr>
+                <tr>
+                    <td>:s/Bill/Steve/</td>
+                    <td>Replace the first occurence of <em>Bill</em> by <em>Steve</em> in current line</td>
+                </tr>
+                <tr>
+                    <td>:s/Bill/Steve/g</td>
+                    <td>Replace <em>Bill</em> by <em>Steve</em> in current line</td>
+                </tr>
+                <tr>
+                    <td>:%s/Bill/Steve/g</td>
+                    <td>Replace <em>Bill</em> by <em>Steve</em> in all the file</td>
+                </tr>
+                <tr>
+                    <td>:%s/\r//g</td>
+                    <td>Delete DOS carriage returns (^M)</td>
+                </tr>
+                <tr>
+                    <td>:%s/\r/\r/g</td>
+                    <td>Transform DOS carriage returns in returns</td>
+                </tr>
+                <tr>
+                    <td>:%s#&lt;[^&gt;]\+&gt;##g</td>
+                    <td>Delete HTML tags but keeps text</td>
+                </tr>
+                <tr>
+                    <td>:%s/^\(.*\)\n\1$/\1/</td>
+                    <td>Delete lines which appears twice</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+a</td>
+                    <td>Increment number under the cursor</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+x</td>
+                    <td>Decrement number under cursor</td>
+                </tr>
+                <tr>
+                    <td>ggVGg?</td>
+                    <td>Change text to Rot13</td>
+                </tr>
+            </table>
+
+            <h3>Case</h3>
+
+            <table>
+                <tr>
+                    <td>Vu</td>
+                    <td>Lowercase line</td>
+                </tr>
+                <tr>
+                    <td>VU</td>
+                    <td>Uppercase line</td>
+                </tr>
+                <tr>
+                    <td>g~~</td>
+                    <td>Invert case</td>
+                </tr>
+                <tr>
+                    <td>vEU</td>
+                    <td>Switch word to uppercase</td>
+                </tr>
+                <tr>
+                    <td>vE~</td>
+                    <td>Modify word case</td>
+                </tr>
+                <tr>
+                    <td>ggguG</td>
+                    <td>Set all text to lowercase</td>
+                </tr>
+                <tr>
+                    <td>:set ignorecase</td>
+                    <td>Ignore case in searches</td>
+                </tr>
+                <tr>
+                    <td>:set smartcase</td>
+                    <td>Ignore case in searches excepted if an uppercase letter is used</td>
+                </tr>
+                <tr>
+                    <td>:%s/\&lt;./\u&amp;/g</td>
+                    <td>Sets first letter of each word to uppercase</td>
+                </tr>
+                <tr>
+                    <td>:%s/\&lt;./\l&amp;/g</td>
+                    <td>Sets first letter of each word to lowercase</td>
+                </tr>
+                <tr>
+                    <td>:%s/.*/\u&amp;</td>
+                    <td>Sets first letter of each line to uppercase</td>
+                </tr>
+                <tr>
+                    <td>:%s/.*/\l&amp;</td>
+                    <td>Sets first letter of each line to lowercase</td>
+                </tr>
+            </table>
+
+            <h3>Read/Write files</h3>
+
+            <table>
+                <tr>
+                    <td>:1,10 w outfile</td>
+                    <td>Saves lines 1 to 10 in <em>outfile</em></td>
+                </tr>
+                <tr>
+                    <td>:1,10 w &gt;&gt; outfile</td>
+                    <td>Appends lines 1 to 10 to <em>outfile</em></td>
+                </tr>
+                <tr>
+                    <td>:r infile</td>
+                    <td>Insert the content of <em>infile</em></td>
+                </tr>
+                <tr>
+                    <td>:23r infile</td>
+                    <td>Insert the content of <em>infile</em> under line 23</td>
+                </tr>
+            </table>
+
+            <h3>File explorer</h3>
+
+            <table>
+                <tr>
+                    <td>:e .</td>
+                    <td>Open integrated file explorer</td>
+                </tr>
+                <tr>
+                    <td>:Sex</td>
+                    <td>Split window and open integrated file explorer</td>
+                </tr>
+                <tr>
+                    <td>:browse e</td>
+                    <td>Graphical file explorer</td>
+                </tr>
+                <tr>
+                    <td>:ls</td>
+                    <td>List buffers</td>
+                </tr>
+                <tr>
+                    <td>:cd ..</td>
+                    <td>Move to parent directory</td>
+                </tr>
+                <tr>
+                    <td>:args</td>
+                    <td>List files</td>
+                </tr>
+                <tr>
+                    <td>:args *.php</td>
+                    <td>Open file list</td>
+                </tr>
+                <tr>
+                    <td>:grep expression *.php</td>
+                    <td>Returns a list of .php files contening <em>expression</em></td>
+                </tr>
+                <tr>
+                    <td>gf</td>
+                    <td>Open file name under cursor</td>
+                </tr>
+            </table>
+
+            <h3>Interact with Unix</h3>
+
+            <table>
+                <tr>
+                    <td>:!pwd</td>
+                    <td>Execute the <em>pwd</em> unix command, then returns to Vi</td>
+                </tr>
+                <tr>
+                    <td>!!pwd</td>
+                    <td>Execute the <em>pwd</em> unix command and insert output in file</td>
+                </tr>
+                <tr>
+                    <td>:sh</td>
+                    <td>Temporary returns to Unix</td>
+                </tr>
+                <tr>
+                    <td>$exit</td>
+                    <td>Retourns to Vi</td>
+                </tr>
+            </table>
+
+            <h3>Alignment</h3>
+
+            <table>
+                <tr>
+                    <td>:%!fmt</td>
+                    <td>Align all lines</td>
+                </tr>
+                <tr>
+                    <td>!}fmt</td>
+                    <td>Align all lines at the current position</td>
+                </tr>
+                <tr>
+                    <td>5!!fmt</td>
+                    <td>Align the next 5 lines</td>
+                </tr>
+            </table>
+
+            <h3>Tabs</h3>
+
+            <table>
+                <tr>
+                    <td>:tabnew</td>
+                    <td>Creates a new tab</td>
+                </tr>
+                <tr>
+                    <td>gt</td>
+                    <td>Show next tab</td>
+                </tr>
+                <tr>
+                    <td>:tabfirst</td>
+                    <td>Show first tab</td>
+                </tr>
+                <tr>
+                    <td>:tablast</td>
+                    <td>Show last tab</td>
+                </tr>
+                <tr>
+                    <td>:tabm n(position)</td>
+                    <td>Rearrange tabs</td>
+                </tr>
+                <tr>
+                    <td>:tabdo %s/foo/bar/g</td>
+                    <td>Execute a command in all tabs</td>
+                </tr>
+                <tr>
+                    <td>:tab ball</td>
+                    <td>Puts all open files in tabs</td>
+                </tr>
+            </table>
+
+            <h3>Window spliting</h3>
+
+            <table>
+                <tr>
+                    <td>:e filename</td>
+                    <td>Edit <em>filename</em> in current window</td>
+                </tr>
+                <tr>
+                    <td>:split filename</td>
+                    <td>Split the window and open <em>filename</em></td>
+                </tr>
+                <tr>
+                    <td>ctrl-w up arrow</td>
+                    <td>Puts cursor in top window</td>
+                </tr>
+                <tr>
+                    <td>ctrl-w ctrl-w</td>
+                    <td>Puts cursor in next window</td>
+                </tr>
+                <tr>
+                    <td>ctrl-w_</td>
+                    <td>Maximise current window</td>
+                </tr>
+                <tr>
+                    <td>ctrl-w=</td>
+                    <td>Gives the same size to all windows</td>
+                </tr>
+                <tr>
+                    <td>10 ctrl-w+</td>
+                    <td>Add 10 lines to current window</td>
+                </tr>
+                <tr>
+                    <td>:vsplit file</td>
+                    <td>Split window vertically</td>
+                </tr>
+                <tr>
+                    <td>:sview file</td>
+                    <td>Same as <strong>:split</strong> in readonly mode</td>
+                </tr>
+                <tr>
+                    <td>:hide</td>
+                    <td>Close current window</td>
+                </tr>
+                <tr>
+                    <td>:&#173;nly</td>
+                    <td>Close all windows, excepted current</td>
+                </tr>
+                <tr>
+                    <td>:b 2</td>
+                    <td>Open #2 in this window</td>
+                </tr>
+            </table>
+
+            <h3>Auto-completion</h3>
+
+            <table>
+                <tr>
+                    <td>Ctrl+n Ctrl+p (in insert mode)</td>
+                    <td>Complete word</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+x Ctrl+l</td>
+                    <td>Complete line</td>
+                </tr>
+                <tr>
+                    <td>:set dictionary=dict</td>
+                    <td>Define <em>dict</em> as a dictionnary</td>
+                </tr>
+                <tr>
+                    <td>Ctrl+x Ctrl+k</td>
+                    <td>Complete with dictionnary</td>
+                </tr>
+            </table>
+
+            <h3>Marks</h3>
+
+            <table>
+                <tr>
+                    <td>mk</td>
+                    <td>Marks current position as <em>k</em></td>
+                </tr>
+                <tr>
+                    <td></em>˜k</td>
+                    <td>Moves cursor to mark <em>k</em></td>
+                </tr>
+                <tr>
+                    <td>d</em>™k</td>
+                    <td>Delete all until mark <em>k</em></td>
+                </tr>
+            </table>
+
+            <h3>Abbreviations</h3>
+
+            <table>
+                <tr>
+                    <td>:ab mail mail@provider.org</td>
+                    <td>Define <em>mail</em> as abbreviation of <em>mail@provider.org</em></td>
+                </tr>
+            </table>
+
+            <h3>Text indent</h3>
+
+            <table>
+                <tr>
+                    <td>:set autoindent</td>
+                    <td>Turn on auto-indent</td>
+                </tr>
+                <tr>
+                    <td>:set smartindent</td>
+                    <td>Turn on intelligent auto-indent</td>
+                </tr>
+                <tr>
+                    <td>:set shiftwidth=4</td>
+                    <td>Defines 4 spaces as indent size</td>
+                </tr>
+                <tr>
+                    <td>ctrl-t, ctrl-d</td>
+                    <td>Indent/un-indent in insert mode</td>
+                </tr>
+                <tr>
+                    <td>&gt;&gt;</td>
+                    <td>Indent</td>
+                </tr>
+                <tr>
+                    <td>&lt;&lt;</td>
+                    <td>Un-indent</td>
+                </tr>
+            </table>
+
+            <h3>Syntax highlighting</h3>
+
+            <table>
+                <tr>
+                    <td>:syntax on</td>
+                    <td>Turn on syntax highlighting</td>
+                </tr>
+                <tr>
+                    <td>:syntax off</td>
+                    <td>Turn off syntax highlighting</td>
+                </tr>
+                <tr>
+                    <td>:set syntax=perl</td>
+                    <td>Force syntax highlighting</td>
+                </tr>
+            </table>
+
+            <h2><a name="linux">Linux Commands</a></h2>
+            <h3>System Info</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>date</td><td>Show the current date and time</td>
+                </tr>
+                <tr>
+                    <td>cal</td><td>Show this month's calendar</td>
+                </tr>
+                <tr>
+                    <td>uptime</td><td>Show current uptime</td>
+                </tr>
+                <tr>
+                    <td>w</td><td>Display who is online</td>
+                </tr>
+                <tr>
+                    <td>whoami</td><td>Who you are logged in as</td>
+                </tr>
+                <tr>
+                    <td>finger user</td><td>Display information about <em>user</em></td>
+                </tr>
+                <tr>
+                    <td>uname -a</td><td>Show kernel information</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>File Commands</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>ls</td><td>Directory listing</td>
+                </tr>
+                <tr>
+                    <td>ls -l</td><td>List files in current directory using long format</td>
+                </tr>
+                <tr>
+                    <td>ls -laC</td><td>List all files in current directory in long format and display in columns</td>
+                </tr>
+                <tr>
+                    <td>ls -F</td><td>List files in current directory and indicate the file type</td>
+                </tr>
+                <tr>
+                    <td>ls -al</td><td>Formatted listing with hidden files</td>
+                </tr>
+                <tr>
+                    <td>tree</td><td>Directory listing in tree format</td>
+                </tr>
+                <tr>
+                    <td>cd dir</td><td>Change directory to <em>dir</em></td>
+                </tr>
+                <tr>
+                    <td>cat /proc/cpuinfo</td><td>CPU information</td>
+                </tr>
+                <tr>
+                    <td>cat /proc/meminfo</td><td>Memory information</td>
+                </tr>
+                <tr>
+                    <td>df -h</td><td>Show disk usage</td>
+                </tr>
+                <tr>
+                    <td>du</td><td>Show directory space usage</td>
+                </tr>
+                <tr>
+                    <td>free</td><td>Show memory and swap usage</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Learn the commands</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>apropos subject</td><td>List manual pages for <em>subject</em></td>
+                </tr>
+                <tr>
+                    <td>man -k keyword</td><td>Display man pages containing <em>keyword</em></td>
+                </tr>
+                <tr>
+                    <td>man command</td><td>Show the manual for <em>command</em></td>
+                </tr>
+                <tr>
+                    <td>man -t command | ps2pdf -> command.pdf</td><td>Make a pdf of a manual page</td>
+                </tr>
+                <tr>
+                    <td>which command</td><td>Show full path name of <em>command</em></td>
+                </tr>
+                <tr>
+                    <td>time command</td><td>See how long a <em>command</em> takes</td>
+                </tr>
+                <tr>
+                    <td>whereis app</td><td>Show possible lcoations of <em>app</em></td>
+                </tr>
+                <tr>
+                    <td>which app</td><td>Show which <em>app</em> will be run by default; it shows the full path</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Searching</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>grep pattern files</td><td>Search for <em>pattern</em> in <em>files</em></td>
+                </tr>
+                <tr>
+                    <td>grep -r pattern dir</td><td>Search recusrively for <em>pattern</em> in <em>dir</em></td>
+                </tr>
+                <tr>
+                    <td>command | grep pattern</td><td>Search for <em>pattern</em> in the output of <em>command</em></td>
+                </tr>
+                <tr>
+                    <td>locate file</td><td>Find all instances of <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>find / -name filename</td><td>Starting with the root directory, look for the file called <em>filename</em></td>
+                </tr>
+                <tr>
+                    <td>find / -name "*filename*</td><td>Starting with the root directory, look for the file containing the string <em>filename</em></td>
+                </tr>
+                <tr>
+                    <td>locate file</td><td>Find all instances of <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>updatedb</td><td>Create or update the database of files on all file systems attached to the Linux root directory</td>
+                </tr>
+                <tr>
+                    <td>which filename</td><td>Show the subdirectory containing hte executalbe file called <em>filename</em></td>
+                </tr>
+                <tr>
+                    <td>grep TextStringToFind /dir</td><td>Starting with the directory called <em>dir</em>, look for and list all files containing <em>TextStringToFind</em></td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>File Permissions</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>chmod octal file</td><td>Change the permissions of <em>file</em> to <em>octal</em> which can be found separately for user, group and world by adding: 4 - read (r), 2 - write (w), 1 - execute (x)</td>
+                </tr>
+                <tr>
+                    <td>chmod 777</td><td>read, write, execute for all</td>
+                </tr>
+                <tr>
+                    <td>chmod 755</td><td>rwx for owner, rx for group and world. For more options see <em>man chmod.dir</em></td>
+                </tr>
+                <tr>
+                    <td>cd</td><td>Change to home</td>
+                </tr>
+                <tr>
+                    <td>mkdir dir</td><td>Create a directory <em>dir</em></td>
+                </tr>
+                <tr>
+                    <td>pwd</td><td>Show current directory</td>
+                </tr>
+                <tr>
+                    <td>rm name</td><td>Remove a file or directory called <em>name</em></td>
+                </tr>
+                <tr>
+                    <td>rm -r dir</td><td>Delete directory <em>dir</em></td>
+                </tr>
+                <tr>
+                    <td>rm -f file</td><td>Force remove <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>rm -rf dir</td><td>Force remove an entire directory <em>dir</em> and all it's included files and subdirectories (use with extreme caution)</td>
+                </tr>
+                <tr>
+                    <td>cp file1 file2</td><td>Copy <em>file1</em> to <em>file2</em></td>
+                </tr>
+                <tr>
+                    <td>cp -r dir1 dir2</td><td>Copy <em>dir1</em> to <em>dir2</em>; create <em>dir2</em> if it doesn't exist</td>
+                </tr>
+                <tr>
+                    <td>cp file /home/dirname</td><td>Copy <em>file</em> to the <em>/home/dirname</em> directory</td>
+                </tr>
+                <tr>
+                    <td>mv file /home/dirname</td><td>Move the <em>file</em> to the <em>/home/dirname</em> directory</td>
+                </tr>
+                <tr>
+                    <td>mv file1 file2</td><td>Rename or move <em>file1</em> to <em>file2</em>; if <em>file2</em></td>
+                </tr>
+                <tr>
+                    <td>ln -s file link</td><td>Create symbolic link <em>link</em> to <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>touch file</td><td>Create or update <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>cat > file</td><td>Places standard input into <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>cat file</td><td>Display the file called <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>more file</td><td>Display the file called <em>file</em> one page at a time, proceed to next page using the spacebar</td>
+                </tr>
+                <tr>
+                    <td>head file</td><td>Output the first 10 lines of the file called <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>head - 20 file</td><td>Output the first 20 lines of the file called <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>tail file</td><td>Output the last 10 lines of the file called <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>tail -20 file</td><td>Output the last 20 lines of the file called <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>tail -f file</td><td>Output the contents of <em>file</em> as it grows, starting with the last 10 lines</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Compression</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>tar cf file.tar files</td><td>Create a tar named <em>file.tar</em> containing <em>files</em></td>
+                </tr>
+                <tr>
+                    <td>tar xf file.tar</td><td>Extract the files from <em>file.tar</em></td>
+                </tr>
+                <tr>
+                    <td>tar czf file.tar.gz files</td><td>Create a tar with Gzip compression</td>
+                </tr>
+                <tr>
+                    <td>tar xzf file.tar.gz</td><td>Extract a tar using Gzip</td>
+                </tr>
+                <tr>
+                    <td>tar cjf file.tar.bz2</td><td>Create a tar with Bzip2 compression</td>
+                </tr>
+                <tr>
+                    <td>tar xjf file.tar.bz2</td><td>Extract a tar using Bzip2</td>
+                </tr>
+                <tr>
+                    <td>gzip file</td><td>Compresses <em>file</em> and renames it to <em>file.gz</em></td>
+                </tr>
+                <tr>
+                    <td>gzip -d file.gz</td><td>Decompresses <em>file.gz</em> back to <em>file</em></td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Network</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>ifconfig</td><td>List IP addresses for all devices on the local machine</td>
+                </tr>
+                <tr>
+                    <td>iwconfig</td><td>Used to set the parameters of the network interface which are specific to the wireless operation (for exmple: the frequency)</td>
+                </tr>
+                <tr>
+                    <td>iwlist</td><td>Used to display some additional information from a wireless network interface that is not displayed by <em>iwconfig</em></td>
+                </tr>
+                <tr>
+                    <td>ping host</td><td>Ping <em>host</em> and output results</td>
+                </tr>
+                <tr>
+                    <td>whois domain</td><td>Get whois information for <em>domain</em></td>
+                </tr>
+                <tr>
+                    <td>dig domain</td><td>Get DNS information for <em>domain</em></td>
+                </tr>
+                <tr>
+                    <td>dig -x host</td><td>Reverse lookup <em>host</em></td>
+                </tr>
+                <tr>
+                    <td>wget file</td><td>Download <em>file</em></td>
+                </tr>
+                <tr>
+                    <td>wget -c file</td><td>Continue a stopped download</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>SSH</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>ssh user@host</td><td>Connect to <em>host</em> as <em>user</em></td>
+                </tr>
+                <tr>
+                    <td>ssh -p port user@host</td><td>Connect to <em>host</em> on port <em>port</em> as <em>user</em></td>
+                </tr>
+                <tr>
+                    <td>ssh-copy-id user@host</td><td>Add your key to <em>host</em> for <em>user</em> to enable a keyed or passwordless login</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>User Administration</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>adduser accountname</td><td>Create a new user called <em>accountname</em></td>
+                </tr>
+                <tr>
+                    <td>passwd accountname</td><td>Give <em>accountname</em> a new password</td>
+                </tr>
+                <tr>
+                    <td>su</td><td>Login as superuser from current login</td>
+                </tr>
+                <tr>
+                    <td>exit</td><td>Stop being superuser and revert to normal user</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Process Management</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>ps</td><td>Display your currently active processes</td>
+                </tr>
+                <tr>
+                    <td>top</td><td>Display all running processes</td>
+                </tr>
+                <tr>
+                    <td>htop</td><td>Display all running processes</td>
+                </tr>
+                <tr>
+                    <td>kill pid</td><td>Kill process id <em>pid</em></td>
+                </tr>
+                <tr>
+                    <td>killall proc</td><td>Kill all processes named <em>proc</em> (use with extreme caution)</td>
+                </tr>
+                <tr>
+                    <td>bg</td><td>Lists stopped or background jobs; resume a stopped job in the background</td>
+                </tr>
+                <tr>
+                    <td>fg</td><td>Brings the most recent job to foreground</td>
+                </tr>
+                <tr>
+                    <td>fg n</td><td>Bring job <em>n</em> to the foreground</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Installation from package manager</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>apt-get install apache2</td><td>Install Apache2 (Debian / Ubuntu /Linux Mint)</td>
+                </tr>
+                <tr>
+                    <td>apt-get install -y apache2</td><td>Install Apache2 without confirm (Debian / Ubuntu /Linux Mint)</td>
+                </tr>
+                <tr>
+                    <td>apt-get install -y apache2 && apt-get install -y php-fpm</td><td>Install Apache2 and PHP-FPM without confirm</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Installation from source</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>./configure</td><td></td>
+                </tr>
+                <tr>
+                    <td>make</td><td></td>
+                </tr>
+                <tr>
+                    <td>make install</td><td></td>
+                </tr>
+                <tr>
+                    <td>dpkg -i pkg.deb</td><td>Install a DEB package (Debian / Ubuntu / Linux Mint)</td>
+                </tr>
+                <tr>
+                    <td>rpm - Uvh pkg.rpm</td><td>Install an RPM package (Red Hat / Fedora)</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Stopping & Starting</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>shutdown -h now</td><td>Shutdown the system now and do not reboot</td>
+                </tr>
+                <tr>
+                    <td>halt</td><td>Stop all processes - same as above</td>
+                </tr>
+                <tr>
+                    <td>shutdown -r 5</td><td>Shutdown the system in 5 minutes and reboot</td>
+                </tr>
+                <tr>
+                    <td>shutdown -r now</td><td>Shutdown the system now and reboot</td>
+                </tr>
+                <tr>
+                    <td>reboot</td><td>Stop all processes and then reboot - same as above</td>
+                </tr>
+                <tr>
+                    <td>service apache2 start|stop|restart</td><td>Start the Apache2 system</td>
+                </tr>
+                <tr>
+                    <td>service varnish start|stop|restart</td><td>Star the Varnish system</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2><a name="git">GIT Commands</a></h2>
+            <pre><code>git init
+git remote add origin [eigen link]
+git fetch
+git checkout [branch]
+git add --all
+git commit -m "comment"
+git push origin [branch]</code></pre>
+            <h4>Or create a new respository from the command line</h4>
+            <pre><code>echo "# [repo name]" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:[alias]/[branch].git
+git push -u origin master</code></pre>
+            <h4>Or push an existing repository from the command line</h4>
+            <pre><code>git remote add origin git@github.com:[alias]/[branch].git
+git push -u origin master</code></pre>
+            <h3>Setup</h3>
+            <h4>Configuring user information used across all local repositories</h4>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git config --global user.name "firstname lastname"</td><td>Set a aname that is identifiable for credit when reviewing version history</td>
+                </tr>
+                <tr>
+                    <td>git config --global user.email "email"</td><td>Set an email address that will be associated with each history marker</td>
+                </tr>
+                <tr>
+                    <td>git config --global color.ui auto</td><td>Set automatic command line coloring for Git for easy reviewing</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Init</h3>
+            <h4>Initializing and cloning repositories</h4>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git init</td><td>Initialize an existing direcotry</td>
+                </tr>
+                <tr>
+                    <td>git clone url</td><td>Retrieve an entire repository from a hosted location via <em>url</em></td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Stage & Snapshot</h3>
+            <h4>Working with snapshots and the Git staging area</h4>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git status</td><td>Show modified files in working directory, staged for your next commit</td>
+                </tr>
+                <tr>
+                    <td>git add [file]</td><td>Add <em>file</em> as it looks now to your next commit (stage)</td>
+                </tr>
+                <tr>
+                    <td>git reset [file]</td><td>Unstage <em>file</em> while retaining the changes in working directory</td>
+                </tr>
+                <tr>
+                    <td>git diff</td><td>Show a diff of what is changed but not staged</td>
+                </tr>
+                <tr>
+                    <td>git diff --staged</td><td>Show a diff of what is staged but not yet committed</td>
+                </tr>
+                <tr>
+                    <td>git commit -m "descriptive message"</td><td>Commit your staged content as a new commit</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Branch & Merge</h3>
+            <h4>Isolating work in branches, changing context and integrating changes</h4>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git branch</td><td>List your branches. A * will appear next to the currently active branch</td>
+                </tr>
+                <tr>
+                    <td>git branch [branch-name]</td><td>Create a new branch with name <em>branch-name</em> at the current commit</td>
+                </tr>
+                <tr>
+                    <td>git checkout</td><td>Switch to another branch and check it out into your working directory</td>
+                </tr>
+                <tr>
+                    <td>git merge [branch]</td><td>Merge the history of branch with name <em>branch</em> into the current one</td>
+                </tr>
+                <tr>
+                    <td>git log</td><td>Show all commits in the current branch's history</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Inspect & Compare</h3>
+            <h4>Examining logs, diffs and object information</h4>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git log</td><td>Show the  commit history for the currently active branch</td>
+                </tr>
+                <tr>
+                    <td>git log branchB..branchA</td><td>Show the commits on <em>branchA</em> that are not on <em>branchB</em></td>
+                </tr>
+                <tr>
+                    <td>git log --follow [file]</td><td>Show the commits that changed <em>file</em>, even across renames</td>
+                </tr>
+                <tr>
+                    <td>git diff branchB...branchA</td><td>Show the diff of what is in <em>branchA</em> that is not in <em>branchB</em></td>
+                </tr>
+                <tr>
+                    <td>git show [SHA]</td><td>Show any object in Git in human-readable format</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Tracking path changes</h3>
+            <h4>Versioning file removes and path changes</h4>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git rm [file]</td><td>Deletes <em>file</em> from project and stage the removal for commit</td>
+                </tr>
+                <tr>
+                    <td>git mv existing-path new-path</td><td>Change an existing file path and stage the move</td>
+                </tr>
+                <tr>
+                    <td>git log --stat -M</td><td>Show all commit logs with indication of any paths that moved</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Ignoring Patterns</h3>
+            <h4>Preventing unintentional staging or committing files</h4>
+            <p><em>logs/</em></p>
+            <p><em>*.notes</em></p>
+            <p><em>pattern*/</em></p>
+            <p>Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.</p>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git config --global core.excludesefile [file]</td><td>Systemwide ignore pattern for all local repositories</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Share & Update</h3>
+            <h4>Retrieving updates from another repository and updating local repos</h4>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git remote add [alias] [url]</td><td>Add a git <em>url</em> as an <em>alias</em></td>
+                </tr>
+                <tr>
+                    <td>git fetch [alias]</td><td>Fetch down all the branches from that Git remote</td>
+                </tr>
+                <tr>
+                    <td>git merge [alias]/[branch]</td><td>Merge a remote branch into your current branch to bring it up to date</td>
+                </tr>
+                <tr>
+                    <td>git push [alias] [branch]</td><td>Transmit local branch commits to the remote repository branch</td>
+                </tr>
+                <tr>
+                    <td>git pull</td><td>Fetch and merge any commits from the tracking remote branch</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Rewrite history</h3>
+            <h4>Rewriting branches, updating commits and clearing history</h4>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git rebase [branch]</td><td>Apply any commits of current branch ahead of specified one</td>
+                </tr>
+                <tr>
+                    <td>git reset --hard [commit]</td><td>Clear staging area, rewrite working tree from specified commit</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Temporary commits</h3>
+            <h4>Temporarily store modified, tracked files in order to change branches</h4>
+            <table>
+                <tbody>
+                <tr>
+                    <td>git stash</td><td>Save modified and staged changes</td>
+                </tr>
+                <tr>
+                    <td>git stash list</td><td>List stack-order of stashed file changes</td>
+                </tr>
+                <tr>
+                    <td>git stash pop</td><td>Write working from top of stash stack</td>
+                </tr>
+                <tr>
+                    <td>git stash drop</td><td>Discard the changes from top of stash stack</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2><a name="magento2">Magento 2 Commands</a></h2>
+            <p>Usage:</p>
+            <p>command [options] [arguments]</p>
+
+            <p>Options</p>
+            <table>
+                <tbody>
+                <tr>
+                    <td>--help (-h)</td><td>Displays help message</td>
+                </tr>
+                <tr>
+                    <td>--quiet (-q)</td><td>Do not output any message</td>
+                </tr>
+                <tr>
+                    <td>--verbose (-v|vv|vvv)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td>
+                </tr>
+                <tr>
+                    <td>--version (-V)</td><td>Display this application version</td>
+                </tr>
+                <tr>
+                    <td>--ansi</td><td>Force ANSI output</td>
+                </tr>
+                <tr>
+                    <td>--no-ansi</td><td>Disable ANSI output</td>
+                </tr>
+                <tr>
+                    <td>--no-interaction (-n)</td><td>Do not ask any interactive question</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h3>Available commands</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>help</td><td>Displays help for a command</td>
+                </tr>
+                <tr>
+                    <td>list</td><td>Lists commands</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Admin</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>admin:user:create</td><td>Creates an administrator</td>
+                </tr>
+                <tr>
+                    <td>admin:user:unlock</td><td>Unlock admin account</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Cache</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>cache:clean</td><td>Cleans cache type(s)</td>
+                </tr>
+                <tr>
+                    <td>cache:disable</td><td>Disables cache type(s)</td>
+                </tr>
+                <tr>
+                    <td>cache:enable</td><td>Enables cache type(s)</td>
+                </tr>
+                <tr>
+                    <td>cache:flush</td><td>Flushes cache storage used by cache type(s)</td>
+                </tr>
+                <tr>
+                    <td>cache:status</td><td>Checks cache status</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Catalog</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>catalog:images:resize</td><td>Creates resized product images</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Cron</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>cron:run</td><td>Runs jobs by schedule</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Customer</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>customer:hash:upgrade</td><td>Upgrade customer's hash according to the latest algorithm</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Deploy</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>deploy:mode:set</td><td>Set application mode</td>
+                </tr>
+                <tr>
+                    <td>deploy:mode:show</td><td>Displays current application mode</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Dev</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>dev:source-theme:deploy</td><td>Collects and publishes source files for theme</td>
+                </tr>
+                <tr>
+                    <td>dev:tests:run</td><td>Runs tests</td>
+                </tr>
+                <tr>
+                    <td>dev:urn-catalog:generate</td><td>Generates the catalog of URNS to *.xsd</td>
+                </tr>
+                <tr>
+                    <td>dev:xml:convert</td><td>Converts XML file using XSL style sheets</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>i18n</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>i18n:collect-phrases</td><td>Discovers phrases in the codebase</td>
+                </tr>
+                <tr>
+                    <td>i8n:pack</td><td>Saves language package</td>
+                </tr>
+                <tr>
+                    <td>i18n:uninstall</td><td>Uninstalls language packages</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Indexer</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>indexer:info</td><td>Shows allowed indexers</td>
+                </tr>
+                <tr>
+                    <td>indexer:reindex</td><td>Reindexes data</td>
+                </tr>
+                <tr>
+                    <td>indexer:set-mode</td><td>Sets index mode type</td>
+                </tr>
+                <tr>
+                    <td>indexer:show-mode</td><td>Shows index mode</td>
+                </tr>
+                <tr>
+                    <td>indexer:status</td><td>Shows status of indexer</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Maintenance</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>maintenance:allow-ips</td><td>Sets maintenance mode exempt IPs</td>
+                </tr>
+                <tr>
+                    <td>maintenance:disable</td><td>Disables maintenance mode</td>
+                </tr>
+                <tr>
+                    <td>maintenance:enable</td><td>Enables maintenance mode</td>
+                </tr>
+                <tr>
+                    <td>maintenance:status</td><td>Displays maintenance mode status</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Module</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>module:disable</td><td>Disables specified modules</td>
+                </tr>
+                <tr>
+                    <td>module:enable</td><td>Enables specified modules</td>
+                </tr>
+                <tr>
+                    <td>module:status</td><td>Displays status of modules</td>
+                </tr>
+                <tr>
+                    <td>module:uninstall</td><td>Uninstalls modules installed by composer</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Sampledata</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>sampledata:deploy</td><td>Deploy sample data modules</td>
+                </tr>
+                <tr>
+                    <td>sampledata:remove</td><td>Remove all sample data from composer.json</td>
+                </tr>
+                <tr>
+                    <td>sampledata:reset</td><td>Reset sample data modules for re-installation</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Theme</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>theme:uninstall</td><td>Uninstalls theme</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Info</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>info:adminuri</td><td>Displays the Magento Admin URI</td>
+                </tr>
+                <tr>
+                    <td>info:backups:list</td><td>Prints list of available backup files</td>
+                </tr>
+                <tr>
+                    <td>info:currency:list</td><td>Displays the list of available currencies</td>
+                </tr>
+                <tr>
+                    <td>info:dependencies:show-framework</td><td>Shows number of dependencies on Magento framework</td>
+                </tr>
+                <tr>
+                    <td>info:dependencies:show-modules</td><td>Shows number of dependencies between modules</td>
+                </tr>
+                <tr>
+                    <td>info:dependencies:show-modules-circular</td><td>Shows number of circular dependencies between modules</td>
+                </tr>
+                <tr>
+                    <td>info:language:list</td><td>Displays the list of available language locales</td>
+                </tr>
+                <tr>
+                    <td>info:timezone:list</td><td>Displays the list of available timezones</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Setup</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>setup:backup</td><td>Takes backup of Magento Application code base, media and database</td>
+                </tr>
+                <tr>
+                    <td>setup:config:set</td><td>Creates or modifies the deployment configuration</td>
+                </tr>
+                <tr>
+                    <td>setup:cron:run</td><td>Runs cron job scheduled for setup application</td>
+                </tr>
+                <tr>
+                    <td>setup:db-data:upgrade</td><td>Installs and upgrades data in the DB</td>
+                </tr>
+                <tr>
+                    <td>setup:db-schema:upgrade</td><td>Installs and upgrades the DB schema</td>
+                </tr>
+                <tr>
+                    <td>setup:db:status</td><td>Checks if the DB schema or data requires upgrade</td>
+                </tr>
+                <tr>
+                    <td>setup:di:compile</td><td>Generates DI configuration and all non-existing interceptors and factories</td>
+                </tr>
+                <tr>
+                    <td>setup:di:compile-multi-tenant</td><td>Generates all non-existing proxies and factories, and pre-compile class definitions, inheritance information and plugin definitions</td>
+                </tr>
+                <tr>
+                    <td>setup:install</td><td>Installs the Magento application</td>
+                </tr>
+                <tr>
+                    <td>setup:performance:generate-fixtures</td><td>Generates fixtures</td>
+                </tr>
+                <tr>
+                    <td>setup:rollback</td><td>Rolls back Magento Application codebase, media and database</td>
+                </tr>
+                <tr>
+                    <td>setup:static-content:deploy</td><td>Deploys static view files</td>
+                </tr>
+                <tr>
+                    <td>setup:store-config:set</td><td>Installs the store configuration</td>
+                </tr>
+                <tr>
+                    <td>setup:uninstall</td><td>Uninstalls the Magento application</td>
+                </tr>
+                <tr>
+                    <td>setup:upgrade</td><td>Upgrades the Magento application, DB data, and schema</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <p><a href="#top">Back to top</a></p>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe!</span></a>
+    <div class="inner">
+        <section class="copyright">All content copyright <a href="mailto:ray@supportdesk.nu">Ray Bogman</a> &copy; 2016 &bull; All rights reserved.</section>
+        <section class="poweredby">Made with <a href="https://www.supportdesk.nu"> SupportDesk</a> and <a href="https://www.frissr.nl">Frissr</a></section>
+    </div>
+</footer>
+
+
+</body>
+</html>
